@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SwimCount</string>
+    <string name="tv_name" translatable="false">Hans Dampf</string>
+    <string name="tv_startnummer">start number %1$d</string>
+    <string name="tv_strecke">distance: %1$d m</string>
+    <string name="plus" translatable="false">plus</string>
+    <string name="minus" translatable="false">minus</string>
+    <string name="iv_content_description">participant picture</string>
+    <string name="startnummer">start number:</string>
+    <string name="nachname">last name:</string>
+    <string name="vorname">first name:</string>
+    <string name="neue_strecke">new distance:</string>
+    <string name="neue_strecke_dummy" translatable="false">%1$d m</string>
+    <string name="save">save</string>
+    <string name="toolbar_title" translatable="false">Toolbar Title</string>
+    <string name="fab_search">Search</string>
+    <string name="fab_qr" translatable="false">QR-Code</string>
+    <string name="search_hint">search name or start number</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="qr_button_process">Process</string>
+    <string name="iv_user_image_content_desc">shows the swimmer\'s picture</string>
+    <string name="string_check_error" tools:ignore="PluralsCandidate">Enter distance between %1$d and %2$d</string>
+    <string name="search_header">Search</string>
+    <string name="http_response_error">HTTP Response Error: User not found.</string>
+    <string name="http_connection_error" translatable="false">HTTP Connection Error</string>
+    <string name="s_tv_qr_placeholder">here\'s space for your ads!</string>
+    <string name="http_response_error_parameter" translatable="false">HTTP Response Error: %1$d</string>
+    <string name="entered_text_not_ok">Entered text not OK</string>
+    <string name="cd_fullscreen_user">fullscreen user image</string>
+
+</resources>

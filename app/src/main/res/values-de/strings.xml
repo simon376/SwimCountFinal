@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SwimCount</string>
+    <string name="qr_button_process">Verarbeiten</string>
+    <string name="barcode_failure">Keinen Barcode aufgenommen</string>
+    <string name="barcode_success">Barcode erfolgreich gelesen</string>
+    <string name="tv_startnummer">Startnummer %1$d</string>
+    <string name="tv_strecke">Strecke: %1$d m</string>
+    <string name="iv_content_description">Teilnehmerfoto</string>
+    <string name="startnummer">Startnummer:</string>
+    <string name="nachname">Nachname:</string>
+    <string name="vorname">Vorname:</string>
+    <string name="neue_strecke">Neue Strecke:</string>
+    <string name="save">speichern</string>
+    <string name="fab_search">Suche</string>
+    <string name="search_hint">Suche Name oder Nummer</string>
+    <string name="permission_camera_rationale">Kameraberechtigung für Erkennung benötigt</string>
+    <string name="no_camera_permission">Die App kann nicht ausgeführt werden, da sie nicht die Kameraberechtigung hat. Die Applikation wird beendet.</string>
+    <string name="low_storage_error">Erkennungs-Abhängigkeiten konnten aufgrund zu wenigem Speicherplatz nicht geladen werden.</string>
+    <string name="iv_user_image_content_desc">zeigt das Schwimmerfoto</string>
+    <string name="string_check_error">Strecke zwischen %1$d und %2$d eingeben</string>
+    <string name="search_header">Suche</string>
+    <string name="http_response_error">HTTP Response Fehler: Benutzer nicht gefunden</string>
+    <string name="s_tv_qr_placeholder">Hier könnte ihre Werbung stehen</string>
+    <string name="entered_text_not_ok">Eingegebener Text ist nicht OK</string>
+    <string name="cd_fullscreen_user">Vollansicht Benutzerfoto</string>
+
+
+</resources>

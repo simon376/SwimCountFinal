@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/is_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.InputScreenActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/tv_is_startnummer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:labelFor="@id/et_is_startnummer"
+        android:text="@string/startnummer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_is_user_image" />
+
+    <EditText
+        android:id="@+id/et_is_startnummer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="number"
+        android:labelFor="@id/tv_is_startnummer"
+        app:layout_constraintStart_toStartOf="@+id/tv_is_startnummer"
+        app:layout_constraintTop_toBottomOf="@+id/tv_is_startnummer" />
+
+    <TextView
+        android:id="@+id/tv_is_nachname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:labelFor="@id/et_is_nachname"
+        android:text="@string/nachname"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <EditText
+        android:id="@+id/et_is_nachname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tv_is_nachname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_is_nachname" />
+
+    <TextView
+        android:id="@+id/tv_is_vorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/et_is_vorname"
+        android:text="@string/vorname"
+        app:layout_constraintStart_toStartOf="@+id/et_is_nachname"
+        app:layout_constraintTop_toBottomOf="@+id/et_is_nachname" />
+
+    <EditText
+        android:id="@+id/et_is_vorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tv_is_vorname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_is_vorname" />
+
+
+    <TextView
+        android:id="@+id/tv_is_neue_strecke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/et_is_neue_strecke"
+        android:text="@string/neue_strecke"
+        app:layout_constraintStart_toStartOf="@+id/et_is_vorname"
+        app:layout_constraintTop_toBottomOf="@+id/et_is_vorname" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_et_neue_strecke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_is_neue_strecke"
+        app:layout_constraintTop_toBottomOf="@+id/tv_is_neue_strecke"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_is_neue_strecke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/neue_strecke_dummy" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button_is_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/til_et_neue_strecke"
+        app:layout_constraintStart_toEndOf="@+id/button_is_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/til_et_neue_strecke" />
+
+
+    <Button
+        android:id="@+id/button_is_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@android:string/cancel"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_is_save"
+        app:layout_constraintEnd_toStartOf="@+id/button_is_save"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/til_et_neue_strecke" />
+
+
+    <ImageView
+        android:id="@+id/iv_is_user_image"
+        android:layout_width="128dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/iv_user_image_content_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:srcCompat="@mipmap/dummy_face" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_is_user_image"
+        app:layout_constraintEnd_toEndOf="@+id/iv_is_user_image"
+        app:layout_constraintStart_toEndOf="@+id/iv_is_user_image"
+        app:layout_constraintTop_toBottomOf="@+id/iv_is_user_image"
+        app:srcCompat="@drawable/ic_camera_alt_white_24dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</android.support.constraint.ConstraintLayout>

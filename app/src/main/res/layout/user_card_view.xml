@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    card_view:cardCornerRadius="4dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:focusable="true">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_user_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/iv_content_description"
+            android:scaleType="centerCrop"
+            card_view:layout_constraintBottom_toTopOf="@+id/guideline"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+             />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/tv_name"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            card_view:layout_constraintEnd_toStartOf="@+id/iv_user_image"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_startnummer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_startnummer"
+            android:maxLines="1"
+            android:ellipsize="end"
+            card_view:layout_constraintEnd_toStartOf="@+id/iv_user_image"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
+
+        <TextView
+            android:id="@+id/tv_strecke"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_strecke"
+            android:maxLines="1"
+            android:ellipsize="end"
+            card_view:layout_constraintEnd_toStartOf="@+id/iv_user_image"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_startnummer"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_startnummer" />
+
+        <Button
+            android:id="@+id/button_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/secondaryLightColor"
+            android:text="@string/plus"
+            android:textAppearance="@android:style/TextAppearance.Material.Button"
+            android:textColor="@color/secondaryTextColor"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/button_minus"
+            card_view:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <Button
+            android:id="@+id/button_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/secondaryLightColor"
+            android:text="@string/minus"
+            android:textAppearance="@android:style/TextAppearance.Material.Button"
+            android:textColor="@color/secondaryTextColor"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            card_view:layout_constraintGuide_end="64dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
