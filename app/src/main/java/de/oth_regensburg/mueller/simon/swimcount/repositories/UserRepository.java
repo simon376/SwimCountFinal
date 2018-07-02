@@ -103,7 +103,11 @@ public class UserRepository {
         @Override
         protected Void doInBackground(final User... users) {
             users[0].setLastRefresh(new Date());
-            mAsyncTaskDao.insert(users[0]);
+            try{
+                mAsyncTaskDao.insert(users[0]);
+            }catch(Exception e){
+                Log.e(TAG, "insert user failed.");
+            }
             Log.d(TAG, "RepositoryAsync Insert User");
             return null;
         }

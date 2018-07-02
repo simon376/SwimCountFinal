@@ -286,7 +286,14 @@ public class InputScreenActivity extends AppCompatActivity {
         //Ignoriert alles, was keine Zahl ist.
         String numberOnly= input.replaceAll("[^0-9]", "");
         if(!numberOnly.isEmpty()){
-            int inputValue = Integer.parseInt(numberOnly.trim());
+            int inputValue = -1;
+            try{
+                inputValue = Integer.parseInt(numberOnly.trim());
+            }catch(NumberFormatException e){
+                textInputLayout.setError(getString(R.string.string_check_error, MIN_DISTANCE, MAX_DISTANCE));
+                Log.e(TAG, "parseInt numberFormatException");
+                return false;
+            }
 
             if(inputValue < MIN_DISTANCE || inputValue > MAX_DISTANCE){
                 textInputLayout.setError(getString(R.string.string_check_error, MIN_DISTANCE, MAX_DISTANCE));

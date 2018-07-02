@@ -23,8 +23,8 @@ public class SwimmerApi {
 
     private static final String TAG = SwimmerApi.class.getSimpleName();
 
-    private static final String BASE_URL = "https://my-json-server.typicode.com/simon376/demo/";
-    //  private static final String BASE_URL = "http://a9bb9520.ngrok.io/";   //Muss bei jedem ngrok-Start aktualisiert werden.
+    //private static final String BASE_URL = "https://my-json-server.typicode.com/simon376/demo/";
+      private static final String BASE_URL = "http://d8a9319c.ngrok.io/";   //Muss bei jedem ngrok-Start aktualisiert werden.
 
 
     private static SwimmerApi sInstance;

@@ -52,7 +52,7 @@ public interface UserDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insertAll(User... users);
 
-    @Insert(onConflict = OnConflictStrategy.ROLLBACK)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insert(User user);
 
     @Delete

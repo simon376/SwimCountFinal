@@ -290,6 +290,7 @@ public class MainActivity extends AppCompatActivity implements UserListAdapterLi
 
         //access the affected item in mUserList.
         User currentUser = mUserList.get(position);
+
         currentUser.addStrecke(DEFAULT_DISTANCE);       //Strecke + 50m
 
         mUserViewModel.update(currentUser);
@@ -306,7 +307,17 @@ public class MainActivity extends AppCompatActivity implements UserListAdapterLi
 
         //access the affected item in mUserList.
         User currentUser = mUserList.get(position);
-        currentUser.addStrecke(-DEFAULT_DISTANCE);       //Strecke - 50m
+        int aktuelleStrecke = currentUser.getStrecke();
+        if(aktuelleStrecke >= 50){
+            currentUser.addStrecke(-DEFAULT_DISTANCE);       //Strecke - 50m
+        }
+        else if(aktuelleStrecke == 0){
+
+            return;
+        }
+        else{
+            currentUser.setStrecke(0);
+        }
 
         mUserViewModel.update(currentUser);
 
