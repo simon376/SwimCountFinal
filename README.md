@@ -17,3 +17,5 @@ The app has the following features:
 - you can view additional information, in a profile view when clicking on the user
 - users can be searched online and added to the offline "cache" (database) by typing the ID or using a QR code
 - changed data (swum laps) is automatically uploaded regularly
+
+<img src="device-2018-06-29-094546.png" width="300">
