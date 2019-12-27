@@ -1,5 +1,6 @@
 # SwimCount
-This the final submission made for the elective course App-Programming @ OTH Regensburg
+This the final submission made for the elective course App-Programming @ OTH Regensburg.
+
 This was my first completed app.
 It's purpose is to count swum laps in a charity event.
 
